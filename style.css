@@ -1,13 +1,14 @@
-/* Loader button */
+/* customizable snowflake styling */
 .loader button {
     width: 50%;
     height: 100px;
     position: fixed;
     left: 50%;
     top: 45%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
+    transform: translateX(-50%);
     background: center no-repeat #fff;
-    z-index: 999999;
+    z-index: 9999999999999999999999;
     font-size: 50px;
     outline: none;
     box-sizing: border-box;
@@ -63,7 +64,6 @@ body {
 
 img {
     width: 100%;
-    height: auto;
 }
 
 .balloon-border {
@@ -73,12 +73,11 @@ img {
     z-index: 99999999;
 }
 
-/* Responsive text */
 .area {
     text-align: center;
-    font-size: 12vw; /* font co theo man hinh */
+    font-size: 70px;
     color: #C4515C;
-    letter-spacing: -0.5vw;
+    letter-spacing: -7px;
     font-weight: 700;
     text-transform: uppercase;
     animation: spin 2s ease-out infinite;
@@ -98,38 +97,33 @@ img {
 }
 
 @keyframes spin {
-    0% { transform: rotateZ(0); }
-    25% { transform: rotateZ(10deg); }
-    50% { transform: rotateZ(0deg); }
-    75% { transform: rotateZ(-10deg); }
+    0% {
+        transform: rotateZ(0);
+    }
+
+    25% {
+        transform: rotateZ(10deg);
+    }
+
+    50% {
+        transform: rotateZ(0deg);
+    }
+
+    75% {
+        transform: rotateZ(-10deg);
+    }
 }
 
-/* Typed text */
 .type-wrap {
-    font-size: 4vw; /* font co theo man hinh */
+    font-size: 25px;
     color: #C4515C;
-    text-align: center;
+
 }
 
-/* Cake */
 .cake {
-    position: relative;
-    display: block;
-    margin: 50px auto 0 auto;
-    max-width: 80%;
-}
-
-/* Media queries cho dien thoai */
-@media screen and (max-width: 768px) {
-    .area {
-        font-size: 15vw;
-        letter-spacing: -1vw;
-    }
-    .type-wrap {
-        font-size: 5vw;
-    }
-    .cake {
-        max-width: 90%;
-        margin-top: 30px;
-    }
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    padding-top: 250px;
 }

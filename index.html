@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="vi">
+<html>
 
 <head>
     <title>Happy Birthday</title>
@@ -10,37 +9,32 @@
 </head>
 
 <body>
-    <!-- Loader -->
-    <div class="loader">
-        <button id="play">Start</button>
+    <div class="container">
+        <div class="row">
+            <div class="loader">
+                <button id="play">Start</button>
+            </div>
+        </div>
     </div>
-
-    <!-- Music -->
     <audio class="song" controls loop>
-        <source src="music.mp3" type="audio/mpeg">
+        <source src="music.mp3">
+        </source>
         Your browser isn't invited for super fun audio time.
     </audio>
-
-    <!-- Confetti -->
     <canvas id="confetti"></canvas>
-
-    <!-- Main content -->
     <div class="main">
         <div class="container pt-5">
-            <div class="row justify-content-center">
+            <div class="row">
 
-                <!-- Banner -->
-                <div class="col-12 col-md-8 text-center mb-3">
-                    <img src="banner.png" alt="Banner" class="img-fluid">
+                <div class="col-12 col-xl-6 mx-auto">
+                    <img src="banner.png" alt="">
                 </div>
 
-                <!-- Name -->
-                <div class="col-12 text-center mb-3">
+                <div class="col-12  text-center">
                     <div id="name" class="area">Giang</div>
                 </div>
 
-                <!-- Typed Messages -->
-                <div class="col-12 text-center mb-4">
+                <div class="col-12 text-center" styte="auto">
                     <div class="type-wrap">
                         <div id="typed-strings" class="typing">
                             <h2>Happy Birthday <i id="nae">Giang</i></h2>
@@ -54,23 +48,17 @@
                     </div>
                 </div>
 
-                <!-- Cake -->
-                <div class="col-8 col-md-4 text-center mb-5 cake">
-                    <img src="cake.gif" alt="Cake" class="img-fluid">
+                <div class="col-12 col-xl-3 cake">
+                    <img src="cake.gif" alt="">
                 </div>
-
             </div>
         </div>
-
-        <!-- Balloon Border -->
-        <img src="Balloon-Border.png" class="balloon-border img-fluid">
+        <img src="Balloon-Border.png" width="100%" class="balloon-border">
     </div>
-
-    <!-- Scripts -->
-    <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
-    <script src="jquery.js"></script>
-    <script src="typed.min.js"></script>
-    <script src="script.js"></script>
 </body>
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script src="jquery.js"></script>
+<script src="typed.min.js"></script>
+<script src="script.js"></script>
 
 </html>
